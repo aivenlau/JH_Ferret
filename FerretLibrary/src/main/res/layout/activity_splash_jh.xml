@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    tools:viewBindingIgnore="true"
+    tools:context="com.joyhonest.ferrent_new_android.SplashActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@mipmap/cont_1_es_jh"/>
+
+    <!-- app:layout_heightPercent="8%h"
+        app:layout_marginLeftPercent="75%w"
+        app:layout_marginTopPercent="73%h"
+        app:layout_widthPercent="18%w"
+
+        app:layout_heightPercent="9%h"
+        app:layout_widthPercent="19%w"
+        app:layout_marginLeftPercent="76%w"
+        app:layout_marginTopPercent="84%h"
+
+        -->
+
+    <!-- app:layout_constraintHorizontal_bias="0.9"
+    android:background="@mipmap/cont_btn"
+        app:layout_constraintVertical_bias="0.80" -->
+
+    <!-- app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintVertical_bias="0.915" -->
+
+    <Button
+        android:id="@+id/button_A"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#01000000"
+
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintWidth_percent="0.19"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.8"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

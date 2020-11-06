@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="true"
+    tools:context="com.joyhonest.ferrent_new_android.HelpActivity">
+
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/return11_jh"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Title_View"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/help_and_gallery_background_jh"
+        android:gravity="center"
+        android:text="@string/HELP"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_View"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/help_en_jh" />
+
+    <TextView
+        android:id="@+id/Ver_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="2dp"
+
+        android:text="V10.0"
+        android:textColor="#FFFFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

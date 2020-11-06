@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid__view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="true"
+    android:background="#000">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView1"
+        android:layout_centerHorizontal="true"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:listSelector="#00000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/Title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Brow_imageView1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/photo_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/fileInx_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="1/1"
+        android:textColor="#FFFFFFFF" />
+
+
+    <com.joyhonest.ferrent_new_android.MyVideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Brow_videoView2"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Title"
+        android:background="#e4db4a">
+
+        <Button
+            android:id="@+id/but_exit"
+            android:background="@mipmap/return11_jh"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:text="@string/brow_photos_videos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Title_textView"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/delete_selected_jh"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9000"
+        android:layout_below="@+id/Title"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_deletePhotos"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/Delete_photos"
+            android:textSize="18dp"
+            android:background="@mipmap/delete_background_jh"/>
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/CANCEL"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:background="@mipmap/cancel_background_jh"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_notFile"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/gallery_wutu_jh"/>
+
+    <com.joyhonest.ferrent_new_android.WaitView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:id="@+id/WaitView"
+        android:visibility="visible">
+
+    </com.joyhonest.ferrent_new_android.WaitView>
+
+</RelativeLayout>

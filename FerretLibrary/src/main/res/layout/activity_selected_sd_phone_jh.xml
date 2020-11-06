@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:viewBindingIgnore="true"
+    tools:context="com.joyhonest.ferrent_new_android.Selected_SD_Phone_Activity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/Title"
+        android:background="@mipmap/help_and_gallery_background_jh">
+
+        <Button
+            android:id="@+id/but_exit"
+            android:background="@mipmap/return11_jh"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/Brow_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GALLERY"
+            android:textSize="25dp"
+            android:textColor="#FF000000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+
+        <!--TextView
+            android:text="Brow photos and videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"/ -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:id="@+id/but_SD"
+            android:background="@mipmap/sd_card_jh"
+            android:layout_gravity="center"/>
+
+        <Space android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:id="@+id/but_Phone"
+            android:background="@mipmap/phone_icon_jh"
+            android:layout_gravity="center"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</RelativeLayout>

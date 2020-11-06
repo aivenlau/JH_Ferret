@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.joyhonest.ferrent_new_android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q"
+        >
+        <activity android:name=".BrowSelect_JP"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Setting2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".OnlinePlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DispVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".DispPhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".BrowGridActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Selected_SD_Phone_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".UpdateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".HelpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".BrowSelect"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".PlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+    </application>
+
+</manifest>

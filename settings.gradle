@@ -1,0 +1,3 @@
+include ':FerretLibrary'
+include ':app'
+rootProject.name = "JH_Ferret"

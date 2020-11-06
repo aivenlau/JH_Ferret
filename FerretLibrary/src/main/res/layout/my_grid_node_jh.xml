@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minHeight="96dp"
+    android:minWidth="80dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.joyhonest.ferrent_new_android.RoundRectLayout
+        android:id="@+id/item_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/Grid_imageView1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/loading01_jh" />
+
+        <ImageView
+            android:id="@+id/video_bg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:background="@mipmap/video_bg_jh"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            android:background="@mipmap/noselected_icon_jh"/>
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF0000"
+            android:text="1"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <!--Button
+            android:id="@+id/btn_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#0000"/ -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/Grid_textView1"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/filename_TextView"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center" />
+
+    </com.joyhonest.ferrent_new_android.RoundRectLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        />
+
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="8dp"
+        android:id="@+id/Grid_progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_gravity="center" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="44dp"
+        android:layout_height="55dp"
+        android:background="@mipmap/download_icon_jh"
+        android:visibility="gone"
+        />
+
+    <!--Space
+        android:layout_width="20px"
+        android:layout_height="20px" /-->
+</LinearLayout>

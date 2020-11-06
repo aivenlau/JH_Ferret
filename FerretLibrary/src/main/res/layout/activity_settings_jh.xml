@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="true"
+    tools:context="com.joyhonest.ferrent_new_android.SettingsActivity">
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/return11_jh"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Title_View"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/help_and_gallery_background_jh"
+        android:gravity="center"
+        android:text="@string/SETTINGS"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_View">
+
+        <!--ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/set_back" /-->
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_720"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/P720"
+
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintVertical_bias="0.040"
+
+            />
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_360"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/P360"
+
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintVertical_bias="0.040"
+
+            />
+
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_off"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/OFF"
+
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintVertical_bias="0.20"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/LEFT"
+
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintVertical_bias="0.20"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_sel_background"
+            android:text="@string/RIGHT"
+
+            app:layout_constraintWidth_percent="0.18"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintVertical_bias="0.20"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="1"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintVertical_bias="0.36"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_sel_background"
+            android:text="2"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintVertical_bias="0.36"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="3"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintVertical_bias="0.36"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="4"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.721"
+            app:layout_constraintVertical_bias="0.36"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="5"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintVertical_bias="0.36"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="6"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintVertical_bias="0.36"
+
+            />
+
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="7"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintVertical_bias="0.52"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="8"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintVertical_bias="0.52"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="9"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.599"
+            app:layout_constraintVertical_bias="0.52"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="10"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.721"
+            app:layout_constraintVertical_bias="0.52"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="11"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintVertical_bias="0.52"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_auto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/AUTO"
+            android:textSize="12dp"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintVertical_bias="0.52"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/SAVE"
+
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintVertical_bias="0.998"
+
+            />
+
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/Firmware_Update"
+
+            app:layout_constraintWidth_percent="0.25"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintVertical_bias="0.998"
+
+            />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/RESOLUTION"
+
+            android:textColor="#FFFFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintWidth_percent="0.30"
+            app:layout_constraintHeight_percent="0.1"
+
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.0"
+             />
+
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/SIDE_BUTTONS"
+
+            android:textColor="#FFFFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintWidth_percent="0.30"
+            app:layout_constraintHeight_percent="0.1"
+
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.22"
+            app:layout_constraintHorizontal_bias="0.0"
+            />
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/WIFI_CHANNEL"
+
+            android:textColor="#FFFFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintWidth_percent="0.30"
+            app:layout_constraintHeight_percent="0.10"
+
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.39"
+            app:layout_constraintHorizontal_bias="0.0"
+            />
+
+
+        <TextView
+            android:id="@+id/TextView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/save_type"
+
+            android:textColor="#FFFFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHeight_percent="0.10"
+            app:layout_constraintHorizontal_bias="0.0"
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.69"
+            app:layout_constraintWidth_percent="0.30" />
+
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_jpg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="JPG"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintVertical_bias="0.68"
+
+            />
+
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_png"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="PNG"
+
+            app:layout_constraintWidth_percent="0.065"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintVertical_bias="0.68"
+
+            />
+
+        <TextView
+            android:id="@+id/Des_Target"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/STORAGE_LOCATION"
+            android:layout_marginLeft="10dp"
+
+            android:textColor="#FFFFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintHeight_percent="0.10"
+            app:layout_constraintHorizontal_bias="0.0"
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.84"
+            app:layout_constraintWidth_percent="0.30"
+             />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_phone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/SMART_DEVICE"
+
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintVertical_bias="0.84"
+
+            />
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_device"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/FERRET_PLUS"
+
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn_phone"
+
+
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.84"
+
+            />
+
+        <com.joyhonest.ferrent_new_android.AutofitButton
+            android:id="@+id/btn_both"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_no_sel_background"
+            android:text="@string/BOTH"
+
+            app:layout_constraintWidth_percent="0.2"
+            app:layout_constraintHeight_percent="0.10"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintLeft_toRightOf="@+id/btn_device"
+            app:layout_constraintVertical_bias="0.84"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ResetDevice_AlertView"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/ferret_white_background_jh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.45"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.65">
+
+
+            <TextView
+                android:id="@+id/sLine2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Please_manually_restart_the_Ferret_camera"
+                android:textColor="#000"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.35" />
+
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#0000"
+                android:text="OK"
+                android:textColor="#0090ff"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintWidth_percent="0.99" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#80808080"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintVertical_bias="0.75" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
